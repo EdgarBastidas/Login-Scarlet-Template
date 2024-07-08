@@ -12,8 +12,6 @@ import { HiOutlineEyeOff } from "react-icons/hi";
 import FormaArriba from "../assets/svg/Forma_Arriba.svg";
 import FormaAbajo from "../assets/svg/Forma_Abajo.svg";
 import LoginIcono from "../assets/svg/LoginIcono.svg";
-import FondoFormLogin from "../assets/svg/FondoLogin.svg";
-import FondoBotonLogin from "../assets/svg/FondoBotonLogin.svg";
 
 // Imágenes estáticas
 import GoogleLogo from "../assets/img/GoogleLogo.png";

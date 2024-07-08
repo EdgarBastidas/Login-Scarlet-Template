@@ -9,8 +9,6 @@ import { IoArrowBackSharp } from "react-icons/io5";
 import FormaArriba from "../assets/svg/Forma_Arriba.svg";
 import FormaAbajo from "../assets/svg/Forma_Abajo.svg";
 import RecoverIcono from "../assets/svg/RecoverIcono.svg";
-import FondoFormLogin from "../assets/svg/FondoLogin.svg";
-import FondoBotonLogin from "../assets/svg/FondoBotonLogin.svg";
 
 const Recover = () => {
   return (
