@@ -46,15 +46,10 @@ const Register = () => {
           className="w-[20%] h-[20%]"
           alt="register-icon"
         />
-        <h1 className="font-bold text-textoInput text-2xl">Registro</h1>
+        <h1 className="font-bold text-textos text-2xl">Registro</h1>
       </div>
       <div
-        className="flex flex-col justify-center h-[50%] rounded-2xl p-4 mt-10 sm:mt-4"
-        style={{
-          backgroundImage: `url(${FondoFormLogin})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center h-[50%] rounded-2xl p-4 mt-10 sm:mt-4"
       >
         <form>
           <div className="flex flex-col">
@@ -135,16 +130,11 @@ const Register = () => {
         </form>
       </div>
 
-      <div className="flex flex-col gap-2 text-textoInput font-bold items-center justify-center pt-4">
+      <div className="flex flex-col gap-2 text-textos font-bold items-center justify-center pt-4">
         <h1>¿Ya tienes una cuenta?</h1>
         <Link to="/Login-Scarlet-Template">
           <button
-            className="text-white font-normal rounded-xl p-2 pl-20 pr-20"
-            style={{
-              backgroundImage: `url(${FondoBotonLogin})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+            className="bg-gradient-to-b from-primary to-secoudary text-white font-normal rounded-xl p-2 pl-20 pr-20"
           >
             Iniciar Sesión
           </button>

@@ -38,16 +38,9 @@ const Login = () => {
       />
       <div className="flex flex-col items-center justify-center pt-[5%]">
         <img src={LoginIcono} className="w-[20%] h-[20%]" alt="Login Icon" />
-        <h1 className="font-bold text-textoInput text-2xl">Login</h1>
+        <h1 className="font-bold text-textos text-2xl">Login</h1>
       </div>
-      <div
-        className="flex flex-col justify-center h-[40%] rounded-2xl p-4 mt-10 sm:mt-4"
-        style={{
-          backgroundImage: `url(${FondoFormLogin})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center h-[40%] rounded-2xl p-4 mt-10 sm:mt-4">
         <form action="">
           <div className="flex flex-col">
             <label className="px-auto text-white text-sm" htmlFor="email">
@@ -93,7 +86,7 @@ const Login = () => {
             </div>
             <Link
               to="/Login-Scarlet-Template/recover"
-              className="text-white text-sm pt-1"
+              className="text-white text-sm pt-3 mb-1"
             >
               Olvidé mi contraseña
             </Link>
@@ -113,17 +106,10 @@ const Login = () => {
           <img className="w-6 h-6" src={TwiterLogo} alt="Twitter Logo" />
         </div>
       </div>
-      <div className="flex flex-col gap-2 text-textoInput font-bold items-center justify-center">
+      <div className="flex flex-col gap-2 text-textos font-bold items-center justify-center">
         <h1>Necesitas una cuenta?</h1>
         <Link to="/Login-Scarlet-Template/register">
-          <button
-            className="text-white font-normal rounded-xl p-2 pl-20 pr-20"
-            style={{
-              backgroundImage: `url(${FondoBotonLogin})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
+          <button className="bg-gradient-to-b from-primary to-secoudary text-white font-normal rounded-xl p-2 pl-20 pr-20">
             Registrarme
           </button>
         </Link>

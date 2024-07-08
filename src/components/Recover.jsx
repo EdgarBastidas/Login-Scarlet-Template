@@ -38,14 +38,7 @@ const Recover = () => {
           Recuperar contraseña
         </h1>
       </div>
-      <div
-        className="flex flex-col justify-center rounded-2xl p-4 mt-[25%] mb-[20%]"
-        style={{
-          backgroundImage: `url(${FondoFormLogin})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center rounded-2xl p-4 mt-[25%] mb-[20%]">
         <form>
           <div className="flex flex-col">
             <label className="px-auto text-white text-sm" htmlFor="email">
@@ -74,14 +67,7 @@ const Recover = () => {
       <div className="flex flex-col gap-2 text-textoInput font-bold items-center justify-center pt-4">
         <h1>¿Ya tienes una cuenta?</h1>
         <Link to="/Login-Scarlet-Template">
-          <button
-            className="text-white font-normal rounded-xl p-2 pl-20 pr-20 mb-[7%]"
-            style={{
-              backgroundImage: `url(${FondoBotonLogin})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
+          <button className="bg-gradient-to-b from-primary to-secoudary text-white font-normal rounded-xl p-2 pl-20 pr-20 mb-[7%]">
             Iniciar Sesión
           </button>
         </Link>
