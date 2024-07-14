@@ -12,16 +12,38 @@ import FormaAbajo from "../assets/svg/Forma_Abajo.svg";
 import RegisterIcono from "../assets/svg/RegisterIcono.svg";
 
 const Register = () => {
-  const [mostrarPass, setMostrarPass] = useState(false);
-  const [mostrarConfirPass, setMostrarConfirPass] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setMostrarPass(!mostrarPass);
-  };
-
-  const toggleConfirmPasswordVisibility = () => {
-    setMostrarConfirPass(!mostrarConfirPass);
-  };
+   // estado de la variable mostrarPass y mostrarConfirPass
+   const [mostrarPass, setMostrarPass] = useState(false);
+   const [mostrarConfirPass, setMostrarConfirPass] = useState(false);
+ 
+   // funciones para controlar el valor de las variables mostrarPass y mostrarConfirPass, para usar el icono de mostrar contraseña
+   const togglePasswordVisibility = () => {
+     setMostrarPass(!mostrarPass);
+   };
+ 
+   const toggleConfirmPasswordVisibility = () => {
+     setMostrarConfirPass(!mostrarConfirPass);
+   };
+   //fin funciones controlar mostrar u ocultar password
+ 
+   //funcion para simular el inicio de sesion
+   const SimularRegistro = (e) => {
+     e.preventDefault();
+ 
+     // Recuperar los valores de los campos de contraseña
+     const password = document.getElementById("password").value;
+     const confirmarPass = document.getElementById("confirmarPass").value;
+ 
+     // Simulación de validación de credenciales
+     // Comparar contraseñas
+     if (password === confirmarPass) {
+       alert("Registro exitoso");
+       window.location.href = "/Login-Scarlet-Template";
+       // Aquí podrías agregar la lógica para redireccionar a la página de inicio, por ejemplo:
+     } else {
+       alert("Las contraseñas no coinciden");
+     }
+   };
 
   return (
     <>
@@ -49,7 +71,7 @@ const Register = () => {
       <div
         className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center h-[50%] rounded-2xl p-4 mt-10 sm:mt-4"
       >
-        <form>
+        <form onSubmit={SimularRegistro}>
           <div className="flex flex-col">
             <label className="px-auto text-white text-sm" htmlFor="email">
               Email

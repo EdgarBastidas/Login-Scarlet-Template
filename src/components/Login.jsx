@@ -19,10 +19,19 @@ import FaceLogo from "../assets/img//FaceLogo.png";
 import TwiterLogo from "../assets/img//TwiterLogo.png";
 
 const Login = () => {
-  const [mostrarPass, setMostrarPass] = useState(false);
+  const [mostrarPass, setMostrarPass] = useState(false); // estado de la variable mostrarPass
 
+  // funcion para controlar el valor de la variable mostrarPass, para usar el icono de mostrar contraseña
   const estadoPassword = () => {
     setMostrarPass(!mostrarPass);
+  };
+
+  //funcion para simular el inicio de sesion
+  const ValidarInicioSesion = (e) => {
+    e.preventDefault();
+    // Simulación de validación de credenciales
+    alert("Datos recibidos para validar el inicio de sesion");
+    // Aquí podrías debes validar con tu backend los datos de inicio de sesion y redireccionamiento
   };
   return (
     <>
@@ -39,7 +48,7 @@ const Login = () => {
         <h1 className="font-bold text-textos text-2xl">Login</h1>
       </div>
       <div className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center h-[40%] rounded-2xl p-4 mt-10 sm:mt-4">
-        <form action="">
+        <form onSubmit={ValidarInicioSesion}>
           <div className="flex flex-col">
             <label className="px-auto text-white text-sm" htmlFor="email">
               Email

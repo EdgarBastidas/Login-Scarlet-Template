@@ -11,6 +11,13 @@ import FormaAbajo from "../assets/svg/Forma_Abajo.svg";
 import RecoverIcono from "../assets/svg/RecoverIcono.svg";
 
 const Recover = () => {
+   //funcion para simular la recuperacion de contraseña
+   const SimularRecuperaPass = (e) => {
+    e.preventDefault();
+    alert("Hemos enviado a su correo electronico las credenciales de acceso");
+    window.location.href = "/Login-Scarlet-Template";
+  };
+
   return (
     <>
       <Link to="/Login-Scarlet-Template">
@@ -37,7 +44,7 @@ const Recover = () => {
         </h1>
       </div>
       <div className="bg-gradient-to-b from-primary to-secoudary flex flex-col justify-center rounded-2xl p-4 mt-[25%] mb-[20%]">
-        <form>
+      <form onSubmitCapture={SimularRecuperaPass}>
           <div className="flex flex-col">
             <label className="px-auto text-white text-sm" htmlFor="email">
               Email
